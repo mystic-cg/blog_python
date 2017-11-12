@@ -4,7 +4,7 @@
 # @author  : mystic
 # @date    : 2017/11/11 21:01
 """
-    description
+    Override Configuration
 """
 configs = {
     'db': {
