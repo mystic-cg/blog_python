@@ -98,7 +98,7 @@ async def response_factory(app, handler):
             return web.Response(r)
         if isinstance(r, tuple) and len(r) == 2:
             t, m = r
-            if isinstance(t, int) and (100 <= r < 600):
+            if isinstance(t, int) and (100 <= t < 600):
                 return web.Response(t, str(m))
         # default:
         resp = web.Response(body=str(r).encode('utf-8'))
